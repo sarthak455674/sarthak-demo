@@ -1,3 +1,4 @@
+\\this my first program hello world
 #include<stdio.h>
 int main()
 {
