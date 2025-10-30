@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    char op;
+    printf("enter the two numbers\n:");
+    scanf("%d%d", &a,&b);
+    printf("enter the character(+,-,*,/):\n");
+    scanf(" %c", &op);
+    switch(op)
+    {        
+        case'+':
+        printf("result:%d\n",a+b);
+        break;
+        case '-':
+        printf("result:%d\n",a-b);
+        break;
+        case '*':
+        printf("result:%d\n",a*b);
+        break;
+        case'/':
+        if(b!=0)  
+        printf("result:%d\n",a/b);
+    else
+    printf("error:divisible by zero:\n");
+default:
+printf("invalid operators:\n");
+    }
+    return 0;
+}
